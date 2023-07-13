@@ -47,18 +47,22 @@
       }
       .picture {
         margin: 40px 0;
+        background: url("/images/sign_up_img.svg");
         width: 100% !important;
         height: 30vh;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-weight: 700;
-        background-color: white;
+        color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
       .picture h1 {
         font-size: 30px;
-        color: red;
       }
       .content {
         padding: 40px;
@@ -68,7 +72,10 @@
         gap: 30px;
         border-radius: 20px;
       }
-      .content p a {
+      .content a {
+        color: #0cf;
+      }
+      p span{
         color: #0cf;
       }
       .content h3 {
@@ -89,17 +96,6 @@
         color: rgba(0, 0, 0, 0.5);
         font-size: 16px;
         line-height: 25px;
-      }
-      .btn {
-        margin: 15px 0;
-      }
-      .btn a {
-        padding: 13px 30px;
-        background-color: #0cf;
-        color: white;
-        border-radius: 12px;
-        text-decoration: none;
-        font-weight: 600;
       }
       .content span {
         font-weight: 600;
@@ -178,24 +174,25 @@
         </div>
       </nav>
       <div class="picture">
-        <img src="/images/notification-error-6335962-5220282.svg" alt="" />
-        <h1>Compliance Form Update</h1>
+        <h1>Transaction Notification</h1>
       </div>
       <div class="content">
-        <h3>Hi Jays,</h3>
+        <h3>Hi Jays</h3>
         <div class="paragraph">
-          <p>
-            We have completed the review of your compliance form and unfortunately, it has been declined.
+          <p class="">
+            Your VoucherPay account has been debited successfully.
           </p>
         </div>
         <p>
-            We kindly request that you review the feedback provided and make the necessary adjustments accordingly. Once the required adjustments have been made, you may resubmit the form for further review.
-        </p>
+            Amount: <span>N 230,000</span>.<br/>
+            Description: Withdraw. <br>
+            Date: 23 may, 2023.
+          </p>
         <p>
-            If you have further questions or concerns regarding our compliance, please do not hesitate to <a href="">contact us</a>.
+            If you did not initiate this payment, please reach out to our support team as soon as possible. The security of your account is our top priority at VoucherPay
         </p>
-        <span class="span">Thank you for choosing voucherpay</span>
-        <span>Best regards</span>
+        <span>Thank you for choosing VoucherPay.</span>
+        <p>Best regards,</p>
         <p>The voucherpay Team</p>
       </div>
       <footer>
