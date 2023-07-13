@@ -26,9 +26,7 @@
         align-items: center;
         justify-content: center;
       }
-      h1,
-      h2,
-      h3 {
+      h1, h2, h3{
         text-transform: capitalize;
       }
       .container {
@@ -53,13 +51,15 @@
         width: 100% !important;
         height: 30vh;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-weight: 700;
         color: white;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
       .picture h1 {
         font-size: 30px;
@@ -72,7 +72,10 @@
         gap: 30px;
         border-radius: 20px;
       }
-      .content p a {
+      .content a {
+        color: #0cf;
+      }
+      p span{
         color: #0cf;
       }
       .content h3 {
@@ -93,17 +96,6 @@
         color: rgba(0, 0, 0, 0.5);
         font-size: 16px;
         line-height: 25px;
-      }
-      .btn {
-        margin: 15px 0;
-      }
-      .btn a {
-        padding: 13px 30px;
-        background-color: #0cf;
-        color: white;
-        border-radius: 12px;
-        text-decoration: none;
-        font-weight: 600;
       }
       .content span {
         font-weight: 600;
@@ -141,6 +133,9 @@
         align-items: center;
         justify-content: center;
       }
+      /* .terms{
+            
+        } */
       .terms a {
         color: rgba(255, 255, 255, 0.8);
         font-size: 16px;
@@ -179,26 +174,25 @@
         </div>
       </nav>
       <div class="picture">
-        <h1>balance notification</h1>
+        <h1>Transaction Notification</h1>
       </div>
       <div class="content">
-        <h3>Hi Jays,</h3>
+        <h3>Hi Jays</h3>
         <div class="paragraph">
-          <p>
-            Your account balance is now at N5,000.
+          <p class="">
+            Your VoucherPay account has been debited successfully.
           </p>
         </div>
-
         <p>
-            If you wish to make changes to the amount set, please go to your account settings and make adjustments. If you did not initiate this process, kindly turn off the low balance notification in your account settings. The security of your account is our top priority at VoucherPay.
-        </p>
-
+            Amount: <span>N 230,000</span>.<br/>
+            Description: Withdraw. <br>
+            Date: 23 may, 2023.
+          </p>
         <p>
-          Please do not hesitate to reach out to our
-          <a href="">support team</a> for further enquires
+            If you did not initiate this payment, please reach out to our support team as soon as possible. The security of your account is our top priority at VoucherPay
         </p>
-        <span class="span">Thank you for choosing voucherpay</span>
-        <span>Best regards</span>
+        <span>Thank you for choosing VoucherPay.</span>
+        <p>Best regards,</p>
         <p>The voucherpay Team</p>
       </div>
       <footer>
@@ -208,17 +202,18 @@
           </div>
           <div class="footer_content">
             <p>
-              Follow our social media to be informed about new update on
-              voucherpay.
+                Follow our social media to be informed about new update on voucherpay.
             </p>
           </div>
-          <div class="footer_icons">
-            <a href="https://twitter.com/voucherpay100"><img src="/images/twitter.svg" alt="" /></a>
-            <a href="https://www.instagram.com/voucherpay100/"><img src="/images/instagram.svg" alt="" /></a>
-            <a href=""><img src="/images/linkedIn.svg" alt="" /></a>
-            <a href="https://www.facebook.com/profile.php?id=100090509016886"><img src="/images/facebook.svg" alt="" /></a>
-            <a href=""><img src="/images/website.svg" alt="" /></a>
-          </div>
+          
+            <div class="footer_icons">
+              <a href="https://twitter.com/voucherpay100"><img src="/images/twitter.svg" alt="" /></a>
+              <a href="https://www.instagram.com/voucherpay100/"><img src="/images/instagram.svg" alt="" /></a>
+              <a href=""><img src="/images/linkedIn.svg" alt="" /></a>
+              <a href="https://www.facebook.com/profile.php?id=100090509016886"><img src="/images/facebook.svg" alt="" /></a>
+              <a href=""><img src="/images/website.svg" alt="" /></a>
+            </div>
+        
           <div class="terms">
             <a href="">Terms of Services</a>
             <a href="">Blog</a>
